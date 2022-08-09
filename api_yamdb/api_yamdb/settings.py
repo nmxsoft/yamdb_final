@@ -65,15 +65,6 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 
 # Database
-
-# sqlite3
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 # postgres
 DATABASES = {
     'default': {
@@ -119,11 +110,6 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-
-#STATIC_URL = '/static/'
-#
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
-
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
