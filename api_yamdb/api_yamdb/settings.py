@@ -8,7 +8,8 @@ load_dotenv()
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', '2jc-!steid0libywj@o$mzf9a)rqwn!wti=fppd5d128mn56km')
+# SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'default_key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -65,10 +66,12 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 
 
 # Database
-# postgres
+
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
+        'ENGINE': os.getenv(
+            'DB_ENGINE', default='django.db.backends.postgresql'
+        ),
         'NAME': os.getenv('DB_NAME', default='postgres'),
         'USER': os.getenv('POSTGRES_USER', default='postgres'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='postgres'),
@@ -111,12 +114,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static2'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 
 ADMIN_EMAIL = 'admin@yamdb.ru'
 
