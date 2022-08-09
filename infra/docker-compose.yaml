@@ -9,7 +9,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: ilyuuz/yamdb_final_web:latest
+    image: nmxsoft/yamdb_final_web:latest
     restart: always
     volumes:
       - static_value:/app/static/
