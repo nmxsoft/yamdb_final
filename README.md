@@ -1,4 +1,4 @@
-![finaltask](https://github.com/airatbakiev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![finaltask](https://github.com/nmxsoft/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## REST API YamDB - база отзывов о фильмах, музыке и книгах
 
@@ -72,7 +72,7 @@
 1. Клонировать репозиторий:
 
 ```
-git clone https://github.com/airatbakiev/yamdb_final.git
+git clone https://github.com/nmxsoft/yamdb_final.git
 ```
 
 2. Добавить в клонированный репозиторий секреты (Settings/Secrets):
@@ -84,7 +84,7 @@ git clone https://github.com/airatbakiev/yamdb_final.git
 Переменная: HOST, значение: <публичный ip-адрес сервера>
 ```
 ```
-Переменная: SSH, значение: <закрытый ssh-ключ для подключения к серверу>
+Переменная: SSH_KEY, значение: <закрытый ssh-ключ для подключения к серверу>
 ```
 ```
 Переменная: PASSPHRASE, значение: <пароль, если ssh-ключ защищён паролем>
@@ -159,24 +159,3 @@ ssh <пользователь>@<ip-адрес сервера>
 ```
 sudo docker-compose exec web python manage.py createsuperuser
 ```
-
-### Проверьте работоспособность приложения, для этого перейдите на страницы:
-
-[http://<ip-адрес сервера>/admin](http://airat.ddns.net/admin)
-
-[http://<ip-адрес сервера>/v1/](http://airat.ddns.net/v1/)
-
-***Документация*** (запросы для работа с API):
-
-[http://<ip-адрес сервера>/redoc](http://airat.ddns.net/redoc)
-
-
-### Авторы проекта:
-
-```
-Айрат Бакиев, Виталий Яремчук, Максим Никулин
-```
-
-### Лицензия
-
-[MIT](./LICENSE)
