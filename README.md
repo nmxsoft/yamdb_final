@@ -157,5 +157,19 @@ git push
 ssh <пользователь>@<ip-адрес сервера>
 ```
 ```
-sudo docker-compose exec web python manage.py createsuperuser
+sudo docker-compose exec -T web python manage.py createsuperuser
 ```
+
+Примеры на рабочем севере:
+
+	1) http://51.250.21.86/api/v1/
+	2) http://51.250.21.86/admin
+	3) http://51.250.21.86/redoc
+
+
+Разработчики:
+	Айрат Бакиев, Виталий Яремчук, Макс Никулин
+	
+Лицензия:
+		I like Linus Torvalds, GNU/GPL
+		
