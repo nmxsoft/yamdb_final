@@ -173,3 +173,4 @@ sudo docker-compose exec -T web python manage.py createsuperuser
 Лицензия:
 		I like Linus Torvalds, GNU/GPL
 		
+		
