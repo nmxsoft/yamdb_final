@@ -162,9 +162,9 @@ sudo docker-compose exec -T web python manage.py createsuperuser
 
 Примеры на рабочем сервере:
 
-	1) [a link](http://51.250.21.86/api/v1/)
-	2) [a link](http://51.250.21.86/admin)
-	3) [a link](http://51.250.21.86/redoc)
+	1) http://51.250.21.86/api/v1/
+	2) http://51.250.21.86/admin
+	3) http://51.250.21.86/redoc
 
 
 Разработчики:
